@@ -1,0 +1,12 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "live-server --port=1337"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

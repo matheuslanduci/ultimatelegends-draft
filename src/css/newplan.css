@@ -1,0 +1,144 @@
+body {
+  display: flex;
+}
+
+.decor-bg {
+  width: 100%;
+  height: 100%;
+
+  background: rgba(17, 17, 17, 0.5);
+}
+
+.thresh-bg {
+  position: fixed;
+  width: 214px;
+  height: 100vh;
+
+  background: url("../img/wallpapers/thresh.jpg");
+  background-attachment: fixed;
+  background-position-x: 968px;
+  background-size: cover;
+}
+
+.yone-bg {
+  position: fixed;
+  right: 0;
+  width: 214px;
+  height: 100vh;
+
+  background: url("../img/wallpapers/yone.jpg");
+  background-attachment: fixed;
+  background-position-x: 568px;
+  background-size: cover;
+}
+
+main {
+  position: relative;
+  margin-left: 86px;
+  padding: 16px 128px;
+  width: 939px;
+}
+
+.icon-back {
+  left: 156px;
+}
+
+.new-plan-form {
+  margin-top: 32px;
+  width: 530px;
+}
+
+.input {
+  padding: 0 8px;
+  height: 36px;
+  border: 0;
+  border-radius: 6px;
+  background: #333;
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.input::placeholder {
+  color: #c1c1c1;
+}
+
+.input:focus {
+  outline: 0;
+}
+
+.input[name="name"] {
+  width: 292px;
+}
+
+textarea {
+  margin-top: 26px;
+  padding: 8px 8px;
+  height: 128px;
+  border: 0;
+  border-radius: 6px;
+  background: #333;
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  resize: none;
+}
+
+textarea::placeholder {
+  color: #c1c1c1;
+}
+
+textarea:focus {
+  outline: 0;
+}
+
+.bans span,
+.picks span {
+  margin-bottom: 8px;
+}
+
+.select-row {
+  margin-top: 26px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+select {
+  margin-bottom: 8px;
+  width: 210px;
+  height: 36px;
+  border: 0;
+  border-radius: 6px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
+}
+
+.picks span {
+  text-align: right;
+}
+
+.select-side {  
+  margin-top: 24px;
+  width: 274px;
+}
+
+.confirm-button {
+  margin-top: 24px;
+  width: 100%;
+  height: 36px;
+  border: 0;
+  border-radius: 6px;
+  background: #47cf73;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 700;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}

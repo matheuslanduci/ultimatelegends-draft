@@ -1,0 +1,283 @@
+body {
+  display: flex;
+}
+
+.decor-bg {
+  width: 100%;
+  height: 100%;
+
+  background: rgba(17, 17, 17, 0.5);
+}
+
+.thresh-bg {
+  position: fixed;
+  width: 214px;
+  height: 100vh;
+
+  background: url("../img/wallpapers/thresh.jpg");
+  background-attachment: fixed;
+  background-position-x: 968px;
+  background-size: cover;
+}
+
+.yone-bg {
+  position: fixed;
+  right: 0;
+  width: 214px;
+  height: 100vh;
+
+  background: url("../img/wallpapers/yone.jpg");
+  background-attachment: fixed;
+  background-position-x: 568px;
+  background-size: cover;
+}
+
+main {
+  position: relative;
+  margin-left: 86px;
+  padding: 16px 128px;
+  width: 939px;
+}
+
+.icon-back {
+  left: 156px;
+}
+
+.my-plans {
+  margin-top: 32px;
+  width: 683px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+a {
+  color: #c1c1c1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+}
+
+.plans {
+  margin-top: 6px;
+}
+
+.plan {
+  margin-bottom: 40px;
+  width: 683px;
+}
+
+.info {
+  position: relative;
+  width: 100%;
+  height: 95px;
+  background: #333;
+}
+
+.name {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.delete-button {
+  position: absolute;
+  left: 52px;
+  bottom: 8px;
+
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #c53b3b;
+  cursor: pointer;
+}
+
+.update-button {
+  position: absolute;
+  left: 18px;
+  bottom: 8px;
+
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #47cf73;
+  cursor: pointer;
+}
+
+.pick-row {
+  position: absolute;
+  top: 5px;
+  left: 108px;
+
+  width: 318px;
+  height: 82px;
+
+  display: flex;
+  justify-content: space-between;  
+}
+
+.role-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.champion-icon {
+  margin-top: 4px;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bans {
+  position: absolute;
+  top: 13px;
+  right: 91px;
+}
+
+.bans span {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.bans-row {
+  margin-top: 4px;
+  width: 136px;
+  display: flex;
+  justify-content: space-between;  
+}
+
+.ban-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.prefer-side {
+  position: absolute;
+  right: 64px; 
+  bottom: 8px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.button-collapse {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 48px;
+  height: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+
+  background: #47cf73;
+  cursor: pointer;
+}
+
+.collapse {  
+  padding: 8px 12px;    
+  display: none;  
+  background: #111;
+}
+
+.collapse.active {
+  display: block;
+}
+
+.collapse p {
+  margin-top: 6px;
+  width: 100%;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.delete-modal-wrapper {  
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: none;
+
+  background: rgba(17, 17, 17, 0.6);
+}
+
+.delete-modal {
+  position: relative;
+  margin: 112px auto;
+  width: 500px;
+  height: 200px;
+  border-radius: 6px;
+  background: #111;
+}
+
+.delete-modal .close-icon {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  cursor: pointer;
+}
+
+.delete-modal .span-delete {
+  margin-top: 8px; 
+  width: 428px;
+  height: 46px;
+  text-align: center;
+}
+
+.delete-modal-wrapper.active {
+  display: block;
+}
+
+.delete-modal .trash-icon {
+  margin-top: 18px;
+}
+
+.button-row {
+  margin-top: 32px;
+  width: 304px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirm-button, .cancel-button {
+  width: 136px;
+  height: 36px;
+  border: 0;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.confirm-button {
+  background-color: #C53B3B;
+}
+
+.cancel-button {
+  background-color: #47cf73;
+}

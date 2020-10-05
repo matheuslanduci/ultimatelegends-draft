@@ -1,0 +1,73 @@
+:root {
+  --background-color: #1d1d1d;
+  --font-primary: #fff;
+  --font-secondary: #47cf73;
+  --font-tertiary: #c1c1c1;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: "Fira Sans", "Titillium Web", sans-serif;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fs-18 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.header {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.icon-back {
+  position: absolute;
+  top: 16px;
+  left: 121px;
+  width: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #c1c1c1;
+  cursor: pointer;
+}
+
+.icon-back:hover path {
+  fill: #fff;
+}
+
+.icon-back:hover {
+  color: #fff;
+}
+
+.invisible-link {
+  display: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--font-primary);
+}
+
+.text-secondary {
+  color: var(--font-secondary);
+}
+
+.text-tertiary {
+  color: var(--font-tertiary);
+}
