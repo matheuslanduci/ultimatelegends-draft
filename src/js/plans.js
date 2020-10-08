@@ -149,8 +149,18 @@ const loadPlans = () => {
     pathUpdate.setAttribute("transform", "translate(0.001 -0.001)");
     pathUpdate.setAttribute("fill", "#fff");
 
+    const linkUpdate = document.createElement("a");
+    linkUpdate.setAttribute("href", `editplan.html?plan=${index}`);
+    linkUpdate.setAttribute("class", "invisible-link");
+    linkUpdate.setAttribute("id", `update-button-${index}`);
+
     svgUpdate.appendChild(pathUpdate);
+    updateButton.appendChild(linkUpdate);
     updateButton.appendChild(svgUpdate);
+
+    updateButton.addEventListener("click", () => {
+      document.querySelector(`#update-button-${index}`).click();
+    });
 
     const deleteButton = document.createElement("div");
     deleteButton.setAttribute("class", "delete-button");
